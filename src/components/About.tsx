@@ -4,18 +4,21 @@ const About = () => {
   const highlights = [
     {
       icon: Scale,
-      title: "Conhecimento Atualizado",
-      description: "Formação recente com as práticas mais modernas do direito"
+      title: "Excelência Técnica",
+      description:
+        "Atuação pautada em conhecimento jurídico sólido e atualização constante sobre as mudanças na legislação."
     },
     {
       icon: Award,
-      title: "Dedicação Total",
-      description: "Comprometimento integral com cada caso e cliente"
+      title: "Comprometimento e Ética",
+      description:
+        "Dedicação integral a cada caso, com transparência, responsabilidade e foco em resultados concretos."
     },
     {
       icon: Users,
-      title: "Atendimento Próximo",
-      description: "Comunicação clara e acessível em todas as etapas"
+      title: "Atendimento Personalizado",
+      description:
+        "Relação próxima e humanizada com o cliente, priorizando uma comunicação clara e acessível em todas as etapas."
     }
   ];
 
@@ -33,18 +36,18 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
               <p>
-                Recém-aprovado na OAB/BA, inicio minha jornada na advocacia com energia, 
-                conhecimento atualizado e total dedicação aos interesses de meus clientes.
+                Atuo com foco em oferecer soluções jurídicas eficientes e seguras,
+                combinando técnica, estratégia e sensibilidade para compreender
+                as necessidades de cada cliente.
               </p>
               <p>
-                Minha formação recente me permite trazer as práticas mais modernas do direito, 
-                combinando inovação com os princípios fundamentais da advocacia: ética, 
-                comprometimento e transparência.
+                Minha prática é guiada por valores como ética, comprometimento e
+                respeito, sempre buscando resultados que realmente façam a diferença
+                na vida e nos negócios dos meus clientes.
               </p>
               <p>
-                Acredito em uma advocacia acessível e próxima do cliente, onde cada caso 
-                recebe atenção personalizada e um atendimento humanizado, sempre com foco 
-                em resultados concretos.
+                Com uma visão moderna da advocacia, valorizo o diálogo, a clareza nas
+                orientações e o acompanhamento próximo em todas as etapas do processo.
               </p>
             </div>
 

@@ -1,25 +1,25 @@
+import { ShieldCheck, Scale, Handshake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
 
-const Testimonials = () => {
-  const testimonials = [
+const Values = () => {
+  const values = [
     {
-      name: "Carla Souza",
-      role: "Microempresária",
-      content: "Advogado muito atencioso e paciente. Explicou tudo de forma clara e resolveu meu problema com dedicação.",
-      rating: 5
+      icon: ShieldCheck,
+      title: "Ética e Transparência",
+      description:
+        "Cada caso é conduzido com honestidade, sigilo profissional e total clareza em todas as etapas do processo."
     },
     {
-      name: "Roberto Lima",
-      role: "Autônomo",
-      content: "Profissional comprometido e atualizado. Me ajudou muito com minha questão trabalhista. Super recomendo!",
-      rating: 5
+      icon: Scale,
+      title: "Justiça e Responsabilidade",
+      description:
+        "Comprometimento com a aplicação correta do direito, sempre buscando soluções justas e equilibradas para todas as partes."
     },
     {
-      name: "Juliana Reis",
-      role: "Estudante",
-      content: "Atendimento humanizado e preços justos. Conseguiu resolver meu caso com muita competência.",
-      rating: 5
+      icon: Handshake,
+      title: "Respeito e Confiança",
+      description:
+        "Construção de relações baseadas na confiança mútua, empatia e no verdadeiro compromisso com o cliente."
     }
   ];
 
@@ -29,34 +29,30 @@ const Testimonials = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              O Que Dizem Meus <span className="text-gradient-gold">Clientes</span>
+              Meus <span className="text-gradient-gold">Valores</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Confiança e resultados comprovados por quem já foi atendido
+              Princípios que orientam cada atuação e refletem o compromisso com uma advocacia ética e humana.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card 
+            {values.map((value, index) => (
+              <Card
                 key={index}
                 className="bg-card border-border hover:border-gold/50 transition-smooth hover:shadow-gold"
               >
-                <CardContent className="pt-6">
-                  <Quote className="w-10 h-10 text-gold/30 mb-4" />
-                  <p className="text-foreground/90 mb-6 leading-relaxed italic">
-                    "{testimonial.content}"
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <value.icon className="w-10 h-10 text-gold" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 text-gold">
+                    {value.title}
+                  </h3>
+                  <p className="text-foreground/80 leading-relaxed">
+                    {value.description}
                   </p>
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="text-gold text-lg">★</span>
-                    ))}
-                  </div>
-                  <div className="border-t border-border pt-4">
-                    <p className="font-semibold text-gold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -67,4 +63,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Values;

@@ -79,5 +79,17 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
-  }
+  },
+  "description": "**URL**: https://lovable.dev/projects/a46ed5ab-f873-4637-bccf-f22a2e16a237",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurCoode/Portifolio-Advogado.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurCoode/Portifolio-Advogado/issues"
+  },
+  "homepage": "https://github.com/ArthurCoode/Portifolio-Advogado#readme"
 }

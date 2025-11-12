@@ -1,4 +1,4 @@
-import { Scale, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Scale, Instagram, Linkedin, Facebook, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,43 +17,43 @@ const Footer = () => {
                 Advocacia moderna e acessível na Bahia.
               </p>
               <p className="text-sm text-muted-foreground">
-                OAB/BA 123.456
+                OAB/BA
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-4 text-gold">Contato</h3>
               <div className="space-y-2 text-muted-foreground">
-                <p>(71) 99999-9999</p>
-                <p>contato@alexandrebarreiros.adv.br</p>
-                <p>Salvador - BA</p>
+                <p>(77) 99843-3186</p>
+                <p>alexandr3filho@outlook.com</p>
+                <p>Caetité - BA</p>
               </div>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-4 text-gold">Redes Sociais</h3>
               <div className="flex gap-4">
-                <a 
-                  href="#" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/alexandre_filhocte/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-card border border-border rounded-lg hover:border-gold/50 transition-smooth group"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5 text-muted-foreground group-hover:text-gold transition-smooth" />
                 </a>
-                <a 
-                  href="#" 
-                  target="_blank" 
+                <a
+                  href="#"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-card border border-border rounded-lg hover:border-gold/50 transition-smooth group"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-gold transition-smooth" />
                 </a>
-                <a 
-                  href="#" 
-                  target="_blank" 
+                <a
+                  href="#"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-card border border-border rounded-lg hover:border-gold/50 transition-smooth group"
                   aria-label="Facebook"
@@ -64,9 +64,23 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground space-y-2">
             <p>© {currentYear} Alexandre Barreiros - Todos os direitos reservados</p>
-            <p className="mt-2">OAB/BA 123.456 - Advogado</p>
+            <p>OAB/BA — Advogado</p>
+
+            <p className="flex items-center justify-center gap-1 pt-2 text-muted-foreground">
+              Desenvolvido com
+              <Heart className="w-4 h-4 text-gold inline-block animate-pulse" />
+              por
+              <a
+                href="https://www.instagram.com/nextdev.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold hover:text-gold/80 transition-smooth font-medium"
+              >
+                NextDev
+              </a>
+            </p>
           </div>
         </div>
       </div>

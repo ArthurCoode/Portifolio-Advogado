@@ -68,8 +68,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Telefone</p>
-                      <a href="tel:+5571999999999" className="text-muted-foreground hover:text-gold transition-smooth">
-                        (71) 99999-9999
+                      <a href="tel:+557799843-3186" className="text-muted-foreground hover:text-gold transition-smooth">
+                        (77) 99843-3186
                       </a>
                     </div>
                   </div>
@@ -80,8 +80,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <a href="mailto:contato@alexandrebarreiros.adv.br" className="text-muted-foreground hover:text-gold transition-smooth">
-                        contato@alexandrebarreiros.adv.br
+                      <a href="mailto:alexandr3filho@outlook.com" className="text-muted-foreground hover:text-gold transition-smooth">
+                        alexandr3filho@outlook.com
                       </a>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">WhatsApp</p>
                       <a 
-                        href="https://wa.me/5571999999999" 
+                        href="https://wa.me/+5577998433186"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-gold transition-smooth"
